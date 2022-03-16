@@ -4,19 +4,21 @@
   "description": "A simple portfolio website",
   "main": "index.js",
   "scripts": {
-		"dev": "vite",
-    "build": "vite build",
+    "dev": "vite",
+    "build": "vite build && wp",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "John Torsten",
   "license": "ISC",
-  "devDependencies": {
-    "vite": "^2.8.6"
-  },
   "dependencies": {
-    "koa": "^2.13.4",
-    "koa-compress": "^5.1.0",
-    "koa-static": "^5.0.0"
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "vite": "^2.8.6",
+    "webpack": "^5.70.0",
+    "webpack-nano": "^1.1.1",
+    "webpack-node-externals": "^3.0.0",
+    "winston": "^3.6.0"
   }
 }
