@@ -236,4 +236,8 @@ h2 {
   #content {
     margin: 12rem 0 0;
   }
+
+	#resume-btn {
+		margin-top: 4rem;
+	}
 }

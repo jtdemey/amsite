@@ -8,7 +8,7 @@ module.exports = {
   },
   mode: "production",
   output: {
-    path: path.join(process.cwd(), "dist", "amserver"),
+    path: path.join(process.cwd(), "dist"),
     filename: "amserver.js",
   },
   externals: [nodeExternals()],

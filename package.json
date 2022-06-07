@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build && wp",
     "preview": "vite preview",
-		"start": "node dist/amserver/amserver.js",
+		"start": "node dist/amserver.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "John Torsten",

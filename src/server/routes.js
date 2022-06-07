@@ -16,8 +16,12 @@ const sendHtmlFile = (res, fileName) => {
   res.sendFile(path.join(process.cwd(), "src", fileName));
 };
 
-router.route("/").get((req, res) => {
-	sendHtmlFile(res, `index.html`);
+router.route("/").get((req, res, next) => {
+	try {
+		sendHtmlFile(res, `index.html`);
+	} catch (e) {
+		next(e);
+	}
 });
 
 export default router;
