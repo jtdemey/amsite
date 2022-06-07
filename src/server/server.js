@@ -13,6 +13,8 @@ const port = process.env.SERVER_PORT || 3000;
       expressApp.use(cors());
     }
     expressApp.use(morgan("short"));
+		console.log(process.cwd())
+		expressApp.use(express.static("dist/assets"));
     expressApp.use("/", router);
     expressApp.all("*", (req, res) => handle(req, res));
     process.on("SIGINT", () => process.exit());

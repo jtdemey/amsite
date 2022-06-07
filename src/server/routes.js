@@ -16,11 +16,8 @@ const sendHtmlFile = (res, fileName) => {
   res.sendFile(path.join(process.cwd(), "src", fileName));
 };
 
-const routeHtml = (endpoint, fileName) =>
-  router.route(endpoint).get((req, res) => {
-    sendHtmlFile(res, `${fileName}.html`);
-  });
-
-routeHtml("/", "home");
+router.route("/").get((req, res) => {
+	sendHtmlFile(res, `index.html`);
+});
 
 export default router;
