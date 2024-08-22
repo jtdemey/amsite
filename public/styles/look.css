@@ -128,7 +128,7 @@ table {
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/fonts/Source_Sans_Pro/SourceSansPro.ttf");
+  src: url("/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
 }
 
 a {
@@ -137,26 +137,52 @@ a {
 }
 
 body {
+  position: fixed;
   width: 100%;
   min-height: 100vh;
-  background-color: hsl(143, 4%, 32%);
+  background-color: hsl(143, 4%, 28%);
   color: hsl(143, 4%, 95%);
 }
 
 header {
-  width: calc(100% - 24px);
-  margin: 12px;
+  width: calc(100% - 48px);
+  padding: 24px 24px 24px 12px;
+  font-family: "Italianno", serif;
 }
 
 h1 {
+  height: 48px;
+  padding-left: 80px;
   border-bottom: 1px solid hsl(143, 4%, 95%);
-  font-family: "Italianno", serif;
   font-size: 48px;
-  line-height: 12px;
   text-align: left;
+}
+
+header > span {
+  position: absolute;
+  top: 18px;
+  padding-right: 12px;
+  background-color: hsl(143, 4%, 28%);
+  font-size: 84px;
 }
 
 main, footer {
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+main {
+  margin: 48px 12px;
+}
+
+article {
+  margin: 24px 0px;
+}
+
+footer {
+  position: absolute;
+  bottom: 2px;
+  padding: 24px 12px 60px;
+  background-color: hsl(143, 4%, 12%);
+  color: hsl(143, 4%, 84%);
 }
