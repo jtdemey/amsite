@@ -30,3 +30,4 @@ try {
   logger.error(e);
   process.exit(1);
 }
+
